@@ -76,26 +76,21 @@ const LearnerSubmissions = [
   }
 ];
 
-function getLearnerData(course, ag, submissions) {
-  // here, we would process this data to achieve the desired result.
-  const result = [
-    {
-      id: 125,
-      avg: 0.985, // (47 + 150) / (50 + 150)
-      1: 0.94, // 47 / 50
-      2: 1.0 // 150 / 150
-    },
-    {
-      id: 132,
-      avg: 0.82, // (39 + 125) / (50 + 150)
-      1: 0.78, // 39 / 50
-      2: 0.833 // late: (140 - 15) / 150
-    }
-  ];
+let assign1 = AssignmentGroup.assignments[0].points_possible
+let assign2 = AssignmentGroup.assignments[1].points_possible
+let assign3 = AssignmentGroup.assignments[2].points_possible
+console.log (assign1);
+console.log(assign2);
+console.log(assign3)
 
-  return result;
+for(let i = 0; assign1 < LearnerSubmissions[i].score; i++){
+  console.log(points_possible)
 }
+function sum (a,b){
+  console.log(a + b)
+}
+sum (1,2)
 
-const result = getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions);
+for(let items in AssignmentGroup)
 
-console.log(result);
+
